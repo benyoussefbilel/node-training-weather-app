@@ -32,7 +32,7 @@ app.get('/about',(req,res)=>{
 app.get('/help',(req,res)=>{
     res.render('help',{
         title:'Help',
-        message:'help is on the way don\'t worry sit tide!',
+        message:'help is on the way don\'t worry sit tight!',
         name:'Ben Youssef Bilel'
     })
 })
