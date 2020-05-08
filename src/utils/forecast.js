@@ -13,7 +13,7 @@ request({url:url, json:true},(error,response)=>{
     else{
         const data = response.body.current
         const {temperature,feelslike}=response.body.current
-        callback(undefined,'It is '+response.body.current.observation_time+'. the temperature is '+ temperature + ' degress' +' and it feels like '+feelslike + ' degress ,it is '+response.body.current.weather_descriptions[0]+'. and the humidity is '+response.body.current.humidity+' %.')
+        callback(undefined,'It is '+response.body.location.localtime+'. the temperature is '+ temperature + ' degress' +' and it feels like '+feelslike + ' degress ,it is '+response.body.current.weather_descriptions[0]+'. and the humidity is '+response.body.current.humidity+' %.')
     }
 
 })
